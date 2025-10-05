@@ -12,7 +12,7 @@
         body {
             font-family: 'Cairo', sans-serif;
             /* The background image is linked here */
-            background-image: url('background2.jpg');
+            background-image: url('https://placehold.co/1920x1080/334155/ffffff?text=Background');
             background-size: cover;
             background-position: center;
             background-attachment: fixed; /* Keeps the background fixed during scroll */
@@ -23,66 +23,68 @@
         }
     </style>
 </head>
-<body class="flex items-center justify-center min-h-screen p-4">
+<body class="flex items-center justify-center min-h-screen p-4 bg-slate-700">
 
-    <!-- Card with enhanced glassy effect: increased blur, and a subtle border -->
-    <div class="bg-white/20 backdrop-blur-xl rounded-2xl shadow-lg w-full max-w-4xl p-6 sm:p-8 md:p-12 text-center border border-white/30">
-        <!-- Header Section -->
+    <!-- Card with responsive padding and sizing -->
+    <div class="bg-white/20 backdrop-blur-xl rounded-2xl shadow-lg w-full max-w-4xl p-4 sm:p-8 text-center border border-white/30">
+        <!-- Header Section with responsive text sizes -->
         <header>
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 text-shadow">
+            <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-2 text-shadow">
                 دار الهيئة الهندسية
             </h1>
-            <p class="text-base sm:text-lg text-gray-200 text-shadow">
+            <p class="text-sm sm:text-base text-gray-200 text-shadow">
                 أهلاً بكم! يرجى اختيار الخدمة لعرض التفاصيل والقوائم.
             </p>
         </header>
 
-        <!-- Button Grid Section -->
-        <main class="mt-10">
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Main content with responsive margins -->
+        <main class="mt-4 sm:mt-8">
+            <!-- Button Grid changed to 3 columns on all screen sizes to save vertical space, with responsive gaps -->
+            <div class="grid grid-cols-3 gap-3 sm:gap-6">
 
-                <!-- 1. Laundry Button with subtle border for glassy feel -->
-                <a href="https://drive.google.com/file/d/1ktjdEMqr-vfTeKpg0umrCpH6aeOl2gCj/view?usp=sharing" target="_blank" class="group bg-blue-500/80 text-white rounded-xl p-6 flex flex-col items-center justify-center hover:bg-blue-600 transition-all transform hover:-translate-y-1 shadow-md hover:shadow-lg duration-300 ease-in-out border border-white/20">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-2"><path d="M3 6h3"/><path d="M17 6h.01"/><rect width="18" height="20" x="3" y="2" rx="2"/><circle cx="12" cy="13" r="5"/><path d="M12 18a2.5 2.5 0 0 0 0-5 2.5 2.5 0 0 1 0-5"/></svg>
-                    <span class="font-semibold text-xl">المغسلة</span>
+                <!-- 1. Laundry Button with responsive padding, icon, and text size -->
+                <a href="https://drive.google.com/file/d/1ktjdEMqr-vfTeKpg0umrCpH6aeOl2gCj/view?usp=sharing" target="_blank" class="group bg-blue-500/80 text-white rounded-xl p-3 sm:p-6 flex flex-col items-center justify-center hover:bg-blue-600 transition-all transform hover:-translate-y-1 shadow-md hover:shadow-lg duration-300 ease-in-out border border-white/20">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 sm:w-8 md:w-10 sm:h-8 md:h-10 mb-1 sm:mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h3"/><path d="M17 6h.01"/><rect width="18" height="20" x="3" y="2" rx="2"/><circle cx="12" cy="13" r="5"/><path d="M12 18a2.5 2.5 0 0 0 0-5 2.5 2.5 0 0 1 0-5"/></svg>
+                    <span class="font-semibold text-xs sm:text-base md:text-lg">المغسلة</span>
                 </a>
 
-                <!-- 2. Restaurant Button with subtle border for glassy feel -->
-                <a href="https://drive.google.com/file/d/11TjazWbTsMefXC9IcfOtlvplLi6-2AaD/view?usp=drive_link" target="_blank" class="group bg-green-500/80 text-white rounded-xl p-6 flex flex-col items-center justify-center hover:bg-green-600 transition-all transform hover:-translate-y-1 shadow-md hover:shadow-lg duration-300 ease-in-out border border-white/20">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-2"><path d="M15.4 15.63a7.875 6 135 1 1 6.23-6.23 4.5 3.43 135 0 0-6.23 6.23"/><path d="m8.29 12.71-2.6 2.6a2.5 2.5 0 1 0-1.65 4.65A2.5 2.5 0 1 0 8.7 18.3l2.59-2.59"/></svg>
-                    <span class="font-semibold text-xl text-center">مطعم قطر الندى والمشربية</span>
+                <!-- 2. Restaurant Button -->
+                <a href="https://drive.google.com/file/d/11TjazWbTsMefXC9IcfOtlvplLi6-2AaD/view?usp=drive_link" target="_blank" class="group bg-green-500/80 text-white rounded-xl p-3 sm:p-6 flex flex-col items-center justify-center hover:bg-green-600 transition-all transform hover:-translate-y-1 shadow-md hover:shadow-lg duration-300 ease-in-out border border-white/20">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 sm:w-8 md:w-10 sm:h-8 md:h-10 mb-1 sm:mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15.4 15.63a7.875 6 135 1 1 6.23-6.23 4.5 3.43 135 0 0-6.23 6.23"/><path d="m8.29 12.71-2.6 2.6a2.5 2.5 0 1 0-1.65 4.65A2.5 2.5 0 1 0 8.7 18.3l2.59-2.59"/></svg>
+                    <span class="font-semibold text-xs sm:text-sm md:text-base text-center">مطعم قطر الندى والمشربية</span>
                 </a>
 
-                <!-- 3. Patisserie Button with subtle border for glassy feel -->
-                <a href="https://drive.google.com/file/d/1ztVFsTVTMiMgTaTV7i5xIL5YGS6Fpe_5/view?usp=sharing" target="_blank" class="group bg-pink-500/80 text-white rounded-xl p-6 flex flex-col items-center justify-center hover:bg-pink-600 transition-all transform hover:-translate-y-1 shadow-md hover:shadow-lg duration-300 ease-in-out border border-white/20">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-2"><path d="M16 13H3"/><path d="M16 17H3"/><path d="m7.2 7.9-3.388 2.5A2 2 0 0 0 3 12.01V20a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-8.654c0-2-2.44-6.026-6.44-8.026a1 1 0 0 0-1.082.057L10.4 5.6"/><circle cx="9" cy="7" r="2"/></svg>
-                    <span class="font-semibold text-xl">الحلويات</span>
+                <!-- 3. Patisserie Button -->
+                <a href="https://drive.google.com/file/d/1ztVFsTVTMiMgTaTV7i5xIL5YGS6Fpe_5/view?usp=sharing" target="_blank" class="group bg-pink-500/80 text-white rounded-xl p-3 sm:p-6 flex flex-col items-center justify-center hover:bg-pink-600 transition-all transform hover:-translate-y-1 shadow-md hover:shadow-lg duration-300 ease-in-out border border-white/20">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 sm:w-8 md:w-10 sm:h-8 md:h-10 mb-1 sm:mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 13H3"/><path d="M16 17H3"/><path d="m7.2 7.9-3.388 2.5A2 2 0 0 0 3 12.01V20a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-8.654c0-2-2.44-6.026-6.44-8.026a1 1 0 0 0-1.082.057L10.4 5.6"/><circle cx="9" cy="7" r="2"/></svg>
+                    <span class="font-semibold text-xs sm:text-base md:text-lg">الحلويات</span>
                 </a>
 
-                <!-- 4. Drinks Button with subtle border for glassy feel -->
-                <a href="https://drive.google.com/file/d/12OUxIUfWN0soGAmzLOcJagZG30TmT_6m/view?usp=sharing" target="_blank" class="group bg-yellow-500/80 text-white rounded-xl p-6 flex flex-col items-center justify-center hover:bg-yellow-600 transition-all transform hover:-translate-y-1 shadow-md hover:shadow-lg duration-300 ease-in-out border border-white/20">
-                   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-2"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></svg>
-                    <span class="font-semibold text-xl">المشروبات</span>
+                <!-- 4. Drinks Button -->
+                <a href="https://drive.google.com/file/d/12OUxIUfWN0soGAmzLOcJagZG30TmT_6m/view?usp=sharing" target="_blank" class="group bg-yellow-500/80 text-white rounded-xl p-3 sm:p-6 flex flex-col items-center justify-center hover:bg-yellow-600 transition-all transform hover:-translate-y-1 shadow-md hover:shadow-lg duration-300 ease-in-out border border-white/20">
+                   <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 sm:w-8 md:w-10 sm:h-8 md:h-10 mb-1 sm:mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></svg>
+                    <span class="font-semibold text-xs sm:text-base md:text-lg">المشروبات</span>
                 </a>
 
-                <!-- 5. Activities Button with subtle border for glassy feel -->
-                <a href="https://drive.google.com/file/d/1yA0d-l17AwDysfxYdmbA9C0bGeUABwQ-/view?usp=sharing" target="_blank" class="group bg-purple-500/80 text-white rounded-xl p-6 flex flex-col items-center justify-center hover:bg-purple-600 transition-all transform hover:-translate-y-1 shadow-md hover:shadow-lg duration-300 ease-in-out border border-white/20">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-2"><path d="M10 22v-6.57"/><path d="M12 11h.01"/><path d="M12 7h.01"/><path d="M14 15.43V22"/><path d="M15 16a5 5 0 0 0-6 0"/><path d="M16 11h.01"/><path d="M16 7h.01"/><path d="M8 11h.01"/><path d="M8 7h.01"/><rect x="4" y="2" width="16" height="20" rx="2"/></svg>
-                    <span class="font-semibold text-xl">الأنشطة</span>
+                <!-- 5. Activities Button -->
+                <a href="https://drive.google.com/file/d/1yA0d-l17AwDysfxYdmbA9C0bGeUABwQ-/view?usp=sharing" target="_blank" class="group bg-purple-500/80 text-white rounded-xl p-3 sm:p-6 flex flex-col items-center justify-center hover:bg-purple-600 transition-all transform hover:-translate-y-1 shadow-md hover:shadow-lg duration-300 ease-in-out border border-white/20">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 sm:w-8 md:w-10 sm:h-8 md:h-10 mb-1 sm:mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 22v-6.57"/><path d="M12 11h.01"/><path d="M12 7h.01"/><path d="M14 15.43V22"/><path d="M15 16a5 5 0 0 0-6 0"/><path d="M16 11h.01"/><path d="M16 7h.01"/><path d="M8 11h.01"/><path d="M8 7h.01"/><rect x="4" y="2" width="16" height="20" rx="2"/></svg>
+                    <span class="font-semibold text-xs sm:text-base md:text-lg">الأنشطة</span>
                 </a>
 
-                <!-- 6. Oasis Restaurant Button with subtle border for glassy feel -->
-                <a href="https://drive.google.com/file/d/1wbt-zMHrMLMr5p4J8LGe-5bSGtS2HMUT/view?usp=sharing" target="_blank" class="group bg-teal-500/80 text-white rounded-xl p-6 flex flex-col items-center justify-center hover:bg-teal-600 transition-all transform hover:-translate-y-1 shadow-md hover:shadow-lg duration-300 ease-in-out border border-white/20">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-2"><path d="M13 8c0-2.76-2.46-5-5.5-5S2 5.24 2 8h2l1-1 1 1h4"/><path d="M13 7.14A5.82 5.82 0 0 1 16.5 6c3.04 0 5.5 2.24 5.5 5h-3l-1-1-1 1h-3"/><path d="M5.89 9.71c-2.15 2.15-2.3 5.47-.35 7.43l4.24-4.25.7-.7.71-.71 2.12-2.12c-1.95-1.96-5.27-1.8-7.42.35"/><path d="M11 15.5c.5 2.5-.17 4.5-1 6.5h4c2-5.5-.5-12-1-14"/></svg>
-                    <span class="font-semibold text-xl">مطعم Oasis</span>
+                <!-- 6. Oasis Restaurant Button -->
+                <a href="https://drive.google.com/file/d/1wbt-zMHrMLMr5p4J8LGe-5bSGtS2HMUT/view?usp=sharing" target="_blank" class="group bg-teal-500/80 text-white rounded-xl p-3 sm:p-6 flex flex-col items-center justify-center hover:bg-teal-600 transition-all transform hover:-translate-y-1 shadow-md hover:shadow-lg duration-300 ease-in-out border border-white/20">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 sm:w-8 md:w-10 sm:h-8 md:h-10 mb-1 sm:mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8c0-2.76-2.46-5-5.5-5S2 5.24 2 8h2l1-1 1 1h4"/><path d="M13 7.14A5.82 5.82 0 0 1 16.5 6c3.04 0 5.5 2.24 5.5 5h-3l-1-1-1 1h-3"/><path d="M5.89 9.71c-2.15 2.15-2.3 5.47-.35 7.43l4.24-4.25.7-.7.71-.71 2.12-2.12c-1.95-1.96-5.27-1.8-7.42.35"/><path d="M11 15.5c.5 2.5-.17 4.5-1 6.5h4c2-5.5-.5-12-1-14"/></svg>
+                    <span class="font-semibold text-xs sm:text-base md:text-lg">مطعم Oasis</span>
                 </a>
                 
             </div>
-            <!-- Video Section -->
-            <div class="bg-black/50 backdrop-blur-md rounded-2xl shadow-lg w-full max-w-4xl p-4 border border-white/30 mt-8">
-                <h2 class="text-2xl font-bold text-white text-center mb-4 text-shadow">شاهد الفيديو</h2>
+            <!-- Video Section with responsive margin and padding -->
+            <div class="bg-black/50 backdrop-blur-md rounded-2xl shadow-lg w-full max-w-4xl p-2 sm:p-4 border border-white/30 mt-4 sm:mt-8">
+                <h2 class="text-base sm:text-xl font-bold text-white text-center mb-2 text-shadow">شاهد الفيديو</h2>
                     <video controls class="w-full rounded-xl shadow-md">
-                        <source src="Video.mp4" type="video/mp4">
+                        <!-- Note: Using a placeholder video source -->
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
                         متصفحك لا يدعم تشغيل الفيديو.
                     </video>
             </div>
@@ -92,6 +94,3 @@
 
 </body>
 </html>
-
-
-
